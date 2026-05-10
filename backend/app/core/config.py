@@ -1,22 +1,24 @@
-from pydantic_settings import BaseSettings
-from pathlib import Path
 import os
-import dotenv
+from pathlib import Path
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
-dotenv.load_dotenv()
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = os.getenv("DATABASE_URL")
+    PROJECT_ROOT: Path = Path(__file__).resolve().parent.parent.parent.parent
+
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./test.db")
     APP_ENV: str = "development"
 
-    UPLOAD_DIR: Path = Path("uploads")
-    PROCESSED_DIR: Path = Path("processed")
+    UPLOAD_DIR: Path = PROJECT_ROOT / "backend" / "app" / "core" / "uploads"
+    PROCESSED_DIR: Path = PROJECT_ROOT / "backend" / "app" / "core" / "processed"
 
-    class Config:
-        env_file = ".env"
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
 
 settings = Settings()
 
-# Ensure directories exist at startup
-settings.UPLOAD_DIR.mkdir(exist_ok=True)
-settings.PROCESSED_DIR.mkdir(exist_ok=True)
+settings.UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+settings.PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+
+if __name__ == "__main__":
+    print(f"Project Root: {settings.PROJECT_ROOT}")
