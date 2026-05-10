@@ -2,7 +2,7 @@
 
 import sys
 
-from backend.app.logging.logger import logging
+from app.logging.logger import logging
 
 
 class FaceFeatException(Exception):

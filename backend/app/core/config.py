@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./test.db")
     APP_ENV: str = "development"
 
-    UPLOAD_DIR: Path = PROJECT_ROOT / "backend" / "app" / "core" / "uploads"
-    PROCESSED_DIR: Path = PROJECT_ROOT / "backend" / "app" / "core" / "processed"
+    UPLOAD_DIR: Path = PROJECT_ROOT / "backend" / "uploads"
+    PROCESSED_DIR: Path = PROJECT_ROOT / "backend" / "processed"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
