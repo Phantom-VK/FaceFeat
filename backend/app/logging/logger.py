@@ -4,7 +4,7 @@ import logging
 import os
 from datetime import datetime
 
-from backend.app.core.config import settings
+from app.core.config import settings
 
 RUN_TIMESTAMP = datetime.now()
 LOG_FILE = f"{RUN_TIMESTAMP.strftime('%d_%m_%Y_%H:%M:%S')}.log"
