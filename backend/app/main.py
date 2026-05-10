@@ -18,5 +18,3 @@ def main():
 @app.get("/health")
 def health():
     return {"health": "ok"}
-
-
