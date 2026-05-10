@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0feb6b-ca71-4270-961b-2cefdc305a1b" name="Changes" comment="commit .idea config files">
-      <change afterPath="$PROJECT_DIR$/backend/app/models/video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/routes/video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/exceptions/exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/exceptions/exception.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
@@ -29,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vikram/feat/project-setup" />
+        <entry key="$PROJECT_DIR$" value="vikram/feat/setup-db-schema" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +55,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "vikram/feat/setup-db-schema",
+    "git-widget-placeholder": "vikram/feat/add-video-upload",
+    "last_opened_file_path": "/home/vikramaditya/PycharmProjects/FaceFeat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,6 +65,11 @@
     "settings.editor.selected.configurable": "com.anniversary.java30.splash"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FaceFeat" />
@@ -127,7 +132,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778400169067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add Video and VideoFace SQLModel models with Alembic migration">
+      <option name="closed" value="true" />
+      <created>1778416036397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778416036397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add Video and VideoFace SQLModel models with Alembic migration">
+      <option name="closed" value="true" />
+      <created>1778416050031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778416050031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: project setup - folder structure, config, DB skeleton, health endpoint" />
     <MESSAGE value="commit .idea config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit .idea config files" />
+    <MESSAGE value="feat: add Video and VideoFace SQLModel models with Alembic migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Video and VideoFace SQLModel models with Alembic migration" />
   </component>
 </project>
