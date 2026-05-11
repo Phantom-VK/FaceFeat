@@ -4,7 +4,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app.core.database import create_db_and_tables
-from app.api.routes.video import router as video_router
+from app.api.routes.upload_video import router as upload_router
+from app.api.routes.stream_video import router as stream_router
 from app.exceptions.exception import FaceFeatException
 from app.logging.logger import logging
 
@@ -25,7 +26,8 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Face ROI API", lifespan=lifespan)
 
-app.include_router(video_router)
+app.include_router(upload_router)
+app.include_router(stream_router)
 
 
 @app.get("/")
