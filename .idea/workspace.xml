@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0feb6b-ca71-4270-961b-2cefdc305a1b" name="Changes" comment="commit .idea config files">
-      <change afterPath="$PROJECT_DIR$/frontend/src/facefeat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/routes/stream_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/routes/stream_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vikram/feat/add-streaming-endpoint" />
+        <entry key="$PROJECT_DIR$" value="vikram/feat/add-frontend-UI" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +51,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "vikram/feat/add-frontend-UI",
+    "git-widget-placeholder": "vikram/feat/add-containerization",
     "last_opened_file_path": "/home/vikramaditya/PycharmProjects/FaceFeat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -164,7 +159,31 @@
       <option name="project" value="LOCAL" />
       <updated>1778499105774</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(frontend): add React UI — upload, video player, ROI panel">
+      <option name="closed" value="true" />
+      <created>1778501843511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778501843511</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added polling status router and fixed port">
+      <option name="closed" value="true" />
+      <created>1778501872397</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778501872397</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit .idea config files">
+      <option name="closed" value="true" />
+      <created>1778502052720</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778502052720</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,9 +191,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: project setup - folder structure, config, DB skeleton, health endpoint" />
-    <MESSAGE value="commit .idea config files" />
     <MESSAGE value="feat: add Video and VideoFace SQLModel models with Alembic migration" />
     <MESSAGE value="feat(stream-video): add GET /api/video/{id} streaming endpoint with byte-range support" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(stream-video): add GET /api/video/{id} streaming endpoint with byte-range support" />
+    <MESSAGE value="feat(frontend): add React UI — upload, video player, ROI panel" />
+    <MESSAGE value="added polling status router and fixed port" />
+    <MESSAGE value="commit .idea config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit .idea config files" />
   </component>
 </project>
