@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0feb6b-ca71-4270-961b-2cefdc305a1b" name="Changes" comment="commit .idea config files">
-      <change afterPath="$PROJECT_DIR$/backend/app/api/routes/stream_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/routes/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/routes/upload_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/routes/roi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vikram/feat/setup-db-schema" />
+        <entry key="$PROJECT_DIR$" value="vikram/feat/add-streaming-endpoint" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +53,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "vikram/feat/add-streaming-endpoint",
+    "git-widget-placeholder": "vikram/feat/add-roi-endpoint",
     "last_opened_file_path": "/home/vikramaditya/PycharmProjects/FaceFeat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -151,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778416050031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(stream-video): add GET /api/video/{id} streaming endpoint with byte-range support">
+      <option name="closed" value="true" />
+      <created>1778499105774</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778499105774</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +170,7 @@
     <MESSAGE value="feat: project setup - folder structure, config, DB skeleton, health endpoint" />
     <MESSAGE value="commit .idea config files" />
     <MESSAGE value="feat: add Video and VideoFace SQLModel models with Alembic migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Video and VideoFace SQLModel models with Alembic migration" />
+    <MESSAGE value="feat(stream-video): add GET /api/video/{id} streaming endpoint with byte-range support" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(stream-video): add GET /api/video/{id} streaming endpoint with byte-range support" />
   </component>
 </project>
