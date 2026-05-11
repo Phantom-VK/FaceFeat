@@ -15,7 +15,6 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
-        create_db_and_tables()
         logger.info("App startup complete. Registered routes:")
         for route in app.routes:
             logger.info(f"  {route.path}")
