@@ -120,3 +120,16 @@ def stream_video(
     except Exception as e:
         logger.error(f"Unexpected error streaming video | video_id={video_id} | error={e}")
         raise HTTPException(status_code=500, detail="Internal server error while streaming video.")
+
+
+@router.get("/{video_id}/status")
+def get_video_status(video_id: str, db: Session = Depends(get_session)):
+    video = db.query(Video).filter(Video.id == video_id).first()
+    if not video:
+        raise HTTPException(status_code=404, detail="Video not found")
+
+    return {
+        "video_id": video_id,
+        "status": "done" if video.processed_path else "processing",
+        "processed_path": video.processed_path,
+    }
