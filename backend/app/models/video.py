@@ -2,12 +2,8 @@ import uuid
 from datetime import datetime, timezone
 from typing import Optional
 
-from sqlalchemy import Column, ForeignKey
+from sqlalchemy import Column, ForeignKey, Text
 from sqlmodel import SQLModel, Field, Relationship
-
-from app.logging.logger import logging
-
-logger = logging.getLogger(__name__)
 
 
 class VideoBase(SQLModel):
@@ -29,9 +25,10 @@ class Video(VideoBase, table=True):
 
 
 class VideoFaceBase(SQLModel):
-    """Per-frame ROI + embedding."""
+    """Per-frame ROI."""
     frame_index: int = Field(description="Frame number within video")
-    confidence: Optional[float] = Field(default=None, description="Detector confidence")
+    face_index: int = Field(default=0, description="Face number within video")
+    confidence: Optional[float] | None = Field(default=None, description="Detector confidence")
 
     x: Optional[int] = Field(default=None, description="ROI x coordinate (left)")
     y: Optional[int] = Field(default=None, description="ROI y coordinate (top)")
@@ -39,6 +36,47 @@ class VideoFaceBase(SQLModel):
     h: Optional[int] = Field(default=None, description="ROI height")
 
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+    landmarks_json: Optional[str] = Field(
+        default=None,
+        sa_column=Column(Text, nullable=True),
+        description="478 facial landmarks stored as JSON string"
+    )
+
+    smile_score: Optional[float] = Field(
+        default=None,
+        description="Smile intensity score"
+    )
+
+    blink_left: Optional[float] = Field(
+        default=None,
+        description="Left eye blink score"
+    )
+
+    blink_right: Optional[float] = Field(
+        default=None,
+        description="Right eye blink score"
+    )
+
+    brow_raise: Optional[float] = Field(
+        default=None,
+        description="Inner brow raise score"
+    )
+
+    pitch: Optional[float] = Field(
+        default=None,
+        description="Head pitch angle"
+    )
+
+    yaw: Optional[float] = Field(
+        default=None,
+        description="Head yaw angle"
+    )
+
+    roll: Optional[float] = Field(
+        default=None,
+        description="Head roll angle"
+    )
 
 
 class VideoFace(VideoFaceBase, table=True):

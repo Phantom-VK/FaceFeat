@@ -1,6 +1,5 @@
 import sys
 import uuid
-
 from fastapi import APIRouter, UploadFile, File, Depends
 from sqlmodel import Session
 
@@ -9,6 +8,7 @@ from app.core.database import get_session
 from app.exceptions.exception import FaceFeatException
 from app.logging.logger import logging
 from app.models.video import Video
+from app.services.video_processor import process_video
 
 logger = logging.getLogger(__name__)
 
@@ -26,18 +26,19 @@ async def upload_video(
         if not file.filename.endswith((".mp4", ".webm", ".mkv")):
             raise ValueError(f"Unsupported file format: {file.filename}")
 
-        video_id = str(uuid.uuid4())
+        video_id = uuid.uuid4()
         input_path = settings.UPLOAD_DIR / f"{video_id}.mp4"
+        output_path = settings.PROCESSED_DIR / f"{video_id}.mp4"
 
+        # save input file
         with open(input_path, "wb") as f:
             while chunk := await file.read(1024 * 1024):
                 f.write(chunk)
 
         logger.info(f"Video saved to disk: {input_path}")
 
-        # Insert DB record — fps and frame_count are 0 for now, updated after processing
         video = Video(
-            id=uuid.UUID(video_id),
+            id=video_id,
             fps=0,
             frame_count=0,
             original_path=str(input_path),
@@ -45,11 +46,11 @@ async def upload_video(
         )
         session.add(video)
         session.commit()
-        session.refresh(video)
 
-        logger.info(f"Video record inserted in DB with id: {video_id}")
+        # detect face, draw ROI, update DB
+        process_video(video_id, input_path, output_path, session)
 
-        return {"video_id": video_id, "filename": file.filename}
+        return {"video_id": str(video_id), "filename": file.filename}
 
     except Exception as e:
         raise FaceFeatException(str(e), sys)
