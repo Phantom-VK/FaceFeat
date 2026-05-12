@@ -41,6 +41,8 @@ FaceFeat/
 │       ├── facefeat.html
 │       ├── script.js
 │       └── style.css
+├── ARCHITECTURE.md # Shows architecture of system using diagrams.
+├── test_outputs # Contains processed videos along with their original version.
 ├── docker-compose.yml
 └── pyproject.toml
 ```
@@ -136,3 +138,9 @@ Then open `http://localhost:5500/facefeat.html`.
 ```
 GET /health  →  { "health": "ok" }
 ```
+
+## Tests
+The [test_outputs](test_outputs) folder contains 5 folders each containing an original video along with its processed output video.
+Showing face landmarks, expression tracking and bounded box.
+Read the [README](test_outputs/README) file for more information.
+Video used for testing are taken from: https://github.com/intel-iot-devkit/sample-videos

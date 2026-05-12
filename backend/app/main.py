@@ -5,7 +5,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.router import api_router
-from app.core.database import create_db_and_tables
 from app.exceptions.exception import FaceFeatException
 from app.logging.logger import logging
 

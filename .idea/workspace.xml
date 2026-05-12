@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0feb6b-ca71-4270-961b-2cefdc305a1b" name="Changes" comment="commit .idea config files">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="6d0feb6b-ca71-4270-961b-2cefdc305a1b" name="Changes" comment="add">
+      <change afterPath="$PROJECT_DIR$/test_outputs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking-and-pause/original-face-demographics-walking-and-pause.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking-and-pause/processed-face-demographics-walking-and-pause.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking-and-pause/roi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking/original-face-demographics-walking.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking/processed-face-demographics-walking.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-face-demographics-walking/roi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female-and-male/original-head-female-and-male.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female-and-male/processed-head-female-and-male.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female-and-male/roi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female/original-head-female.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female/processed-head-female.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-female/roi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-male/original-head-male.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-male/processed-head-male.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_outputs/video-head-male/roi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,36 +59,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.config.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;vikram/feat/add-containerization&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vikramaditya/PycharmProjects/FaceFeat&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.anniversary.java30.splash&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.config.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "vikram/tests/add-test-outputs",
+    "last_opened_file_path": "/home/vikramaditya/PycharmProjects/CrewAIPractice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.anniversary.java30.splash"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src" />
-      <recent name="$PROJECT_DIR$/backend/mediapipe_models" />
-      <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$/mediapipe_models" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test_outputs/video-face-demographics-walking" />
+      <recent name="$PROJECT_DIR$/test_outputs/video-face-demographics-walking-and-pause" />
+      <recent name="$PROJECT_DIR$/test_outputs/video-head-female" />
+      <recent name="$PROJECT_DIR$/test_outputs/video-head-female-and-male" />
+      <recent name="$PROJECT_DIR$/test_outputs/video-head-male" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,11 +201,30 @@
       <option name="project" value="LOCAL" />
       <updated>1778502052720</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docs: add ARCHITECTURE.md">
+      <option name="closed" value="true" />
+      <created>1778502585841</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778502585841</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: project setup - folder structure, config, DB skeleton, health endpoint" />
@@ -196,6 +233,7 @@
     <MESSAGE value="feat(frontend): add React UI — upload, video player, ROI panel" />
     <MESSAGE value="added polling status router and fixed port" />
     <MESSAGE value="commit .idea config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit .idea config files" />
+    <MESSAGE value="docs: add ARCHITECTURE.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add ARCHITECTURE.md" />
   </component>
 </project>

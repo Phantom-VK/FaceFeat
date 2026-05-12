@@ -1,0 +1,7 @@
+Each output folder contains an orignal video, its processed version (using our system) and a ROI json.
+
+ROI json contains first 100 records, with no landmark data.
+It serves as an example output only.
+While in implemented system we support upto 1000 records per request, with in depth per frame landmark data.
+
+The videos used in the tests are taken from: https://github.com/intel-iot-devkit/sample-videos
